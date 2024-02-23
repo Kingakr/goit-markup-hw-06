@@ -1,14 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
     color: #434455;
     background-color: #ffffff;
     font-style: normal;
     font-weight: 400;
-    text-decoration: none;
+    margin: 0;
+    display: block;
 }
 .page-nav {
     list-style: none;
     color: inherit;
+}
+.page-nav,
+.address-link {
+    display: flex;
+    gap: 8px;
+    margin: 0%;
+    padding: 8px;
 }
 .link {
     font-weight: 500;
