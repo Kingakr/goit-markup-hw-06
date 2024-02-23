@@ -63,6 +63,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    pad: 24px 0;
 }
 .link:hover,
 .link:focus {
@@ -132,7 +133,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.section {
+.sectionone {
     background-color: #2e2f42;
     padding: 188px 0;
 }
