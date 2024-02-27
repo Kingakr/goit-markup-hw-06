@@ -45,6 +45,7 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -193,7 +194,6 @@ body {
 
 .section-one .container {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 48px;
 }
@@ -262,7 +262,7 @@ body {
 }
 
 .footer .container {
-    flex-direction: column;
+    display: block;
 }
 
 .section-three .container {
