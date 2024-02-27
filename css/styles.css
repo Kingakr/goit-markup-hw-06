@@ -38,9 +38,11 @@ body {
     font-style: normal;
     font-weight: 400;
 }
-.navigation {
+
+.header {
     border-bottom: 1px solid #e7e9fc;
 }
+
 .container {
     display: flex;
     width: 1158px;
@@ -48,12 +50,12 @@ body {
     padding: 0 15px;
 }
 
-.navigation-nav {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.page-nav {
+.nav-list {
     display: flex;
     gap: 40px;
 }
@@ -65,10 +67,12 @@ body {
     padding: 24px 0;
     text-decoration: none;
 }
+
 .link:hover,
 .link:focus {
     color: #404bbf;
 }
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -82,16 +86,23 @@ body {
     margin-right: 76px;
     padding: 24px 0;
 }
+
 .blue {
     color: #2e2f42;
 }
-.adress-list {
+
+.address-list {
     display: flex;
     justify-content: center;
     margin-left: 332px;
     padding: 24px 0;
     gap: 40px;
 }
+
+.header .container {
+    justify-content: space-between;
+}
+
 .address-link {
     font-style: normal;
     text-decoration: none;
@@ -99,60 +110,57 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 .address-link:hover,
 .address-link:active,
 .address-link:focus {
     color: #404bbf;
 }
-.team {
-    font-weight: bold;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
+
 .team-list-card {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     border-radius: 0px 0px 4px 4px;
 }
+
 .team-list {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
-.listfour {
+
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 48px 24px;
 }
-.four {
+
+.portfolio-item {
     width: calc((100% - 48px) / 3);
 }
-.textfour {
+
+.text-item {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
 }
+
 .names {
     padding: 32px 0px;
 }
-.sectionfour {
+
+.section-four {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.sectionfour .container {
+.section-four .container {
     flex-direction: column;
 }
 
-.header {
+.item-header {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -162,11 +170,11 @@ body {
     text-align: left;
 }
 
-.sectionthree .header {
+.section-three .item-header {
     text-align: center;
 }
 
-.sectionthree .paragraph {
+.section-three .paragraph {
     text-align: center;
 }
 
@@ -176,26 +184,30 @@ body {
     letter-spacing: 0.02em;
     text-align: left;
 }
-.sectionone {
+
+.section-one {
     background-color: #2e2f42;
     padding: 188px 0;
     width: 100%;
 }
 
-.sectionone .container {
+.section-one .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 48px;
 }
-.sectiontwo {
+
+.section-two {
     padding: 120px 0;
     width: 100%;
 }
-.list {
+
+.section-two-list {
     display: flex;
     gap: 24px;
 }
+
 .title {
     color: #ffffff;
     font-weight: bold;
@@ -206,7 +218,7 @@ body {
     max-width: 496px;
 }
 
-.benefits {
+.benefits-item {
     width: calc((100% - 72px) / 4);
 }
 
@@ -226,17 +238,19 @@ body {
     border-radius: 4px;
     display: block;
 }
+
 .button:hover,
 .button:focus {
     background-color: #404bbf;
 }
-.sectionthree {
+
+.section-three {
     background-color: #f4f4fd;
     padding: 120px 0;
     width: 100%;
 }
 
-.sectionheader {
+.section-header {
     margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
@@ -248,18 +262,19 @@ body {
     color: #2e2f42;
 }
 
-.footer-background .container {
+.footer .container {
     flex-direction: column;
 }
 
-.sectionthree .container {
+.section-three .container {
     flex-direction: column;
 }
 
-.footer-background {
+.footer {
     background-color: #2e2f42;
     padding: 100px 0;
 }
+
 .text {
     color: #f4f4fd;
     size: 12px;
@@ -267,6 +282,7 @@ body {
     line-height: 1.5;
     max-width: 264px;
 }
+
 .logo-end {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -279,9 +295,11 @@ body {
     display: inline-block;
     margin-bottom: 16px;
 }
+
 .white {
     color: #f4f4fd;
 }
+
 .visuallyhidden {
     position: absolute;
     width: 1px;
