@@ -392,6 +392,9 @@ body {
 .footer-container {
     display: flex;
     align-items: baseline;
+}
+
+.footer-item {
     margin-right: 120px;
 }
 
