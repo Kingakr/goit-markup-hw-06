@@ -439,7 +439,6 @@ body {
 .sm-footer-size {
     height: 40px;
     width: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-footer-link {
@@ -450,6 +449,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sm-footer-link:hover,
