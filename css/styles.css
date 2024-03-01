@@ -76,7 +76,7 @@ body {
 }
 
 .link:hover,
-.link:focus {
+.link:active {
     color: #404bbf;
 }
 
