@@ -80,7 +80,7 @@ body {
     color: #404bbf;
 }
 
-.link:active::after {
+.link::after {
     content: "";
     width: 100%;
     position: absolute;
