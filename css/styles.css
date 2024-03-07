@@ -484,6 +484,7 @@ body {
 
 .subscribe-form {
     display: flex;
+    gap: 24px;
 }
 
 .subscribe-label {
