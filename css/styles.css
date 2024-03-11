@@ -642,6 +642,10 @@ body {
     fill: #4d5ae5;
 }
 
+.input-icon:focus-within {
+    fill: #4d5ae5;
+}
+
 .text-window {
     margin-bottom: 16px;
 }
