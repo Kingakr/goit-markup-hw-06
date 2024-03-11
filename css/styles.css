@@ -587,7 +587,7 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon:hover,
-.close-icon:focus, {
+.close-icon:focus {
     fill: #ffffff;
 }
 
@@ -627,8 +627,6 @@ body {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* border-color: #4d5ae5; */
-    name="user-name"
 }
 
 .input-icon {
@@ -639,8 +637,8 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-icon:focus,
-.input-icon:active {
+.input-icon:focus-within {
+    border-color: #4d5ae5;
     fill: #4d5ae5;
 }
 
@@ -662,12 +660,11 @@ body {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .text-area:focus,
 .text-area:active {
-border-color: #4D5AE5;
+    border-color: #4d5ae5;
 }
 
 .checkbox-div {
@@ -686,7 +683,9 @@ border-color: #4D5AE5;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -708,7 +707,7 @@ border-color: #4D5AE5;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color: #4d5ae5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -716,5 +715,5 @@ border-color: #4D5AE5;
 .checkbox-span input:focus {
     background-color: #404bbf;
     border: none;
-    fill: #F4F4FD;
+    fill: #f4f4fd;
 }
