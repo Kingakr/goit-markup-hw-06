@@ -641,7 +641,7 @@ body {
     border-color: #4d5ae5;
 }
 
-.input:focus + input-icon {
+.div-input .input:focus + .input-icon {
     fill: #4d5ae5;
 }
 
