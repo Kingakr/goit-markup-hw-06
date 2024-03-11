@@ -635,10 +635,11 @@ body {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-icon:hover {
+.input-icon:hover,
+.input-icon:active {
     fill: #4d5ae5;
 }
 
@@ -663,7 +664,7 @@ body {
     
 }
 
-.text-area:hover,
+.text-area:focus,
 .text-area:active {
 border-color: #4D5AE5;
 }
