@@ -47,7 +47,6 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 1158px;
     margin: 0 auto;
@@ -119,7 +118,6 @@ body {
 .address-list {
     display: flex;
     justify-content: center;
-    margin-left: 332px;
     padding: 24px 0;
     gap: 40px;
 }
@@ -734,7 +732,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 100%;
+        max-width: 320px;
         display: flex;
         text-align: left;
     }
@@ -750,7 +748,12 @@ body {
     }
 
     .item-header {
+        display: flex;
+        justify-content: center;
         text-align: center;
+        padding-bottom: 8px;
+        font-weight: 700;
+        font-size: 36px;
     }
 
     .section-header {
@@ -758,14 +761,14 @@ body {
     }
     .team-list,
     .names,
-    .section-three .item-header,
     .section-three .paragraph {
         max-width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .item-header {
+    .paragraph {
+        font-style: 500;
         text-align: left;
     }
 
@@ -779,18 +782,37 @@ body {
         align-items: center;
         text-align: left;
         gap: 72px;
+        padding: 16px;
+    }
+
+    .logo-end {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+
+    .text,
+    .footer-item {
+        margin: 0;
+    }
+
+    .subscribe-div {
+        padding: 0;
     }
 
     .subscribe-form,
-    .subscribe-label,
-    submit-button {
+    .subscribe-label {
         display: block;
         padding-bottom: 16px;
     }
 
+    .submit-button,
     .subscribe-label {
-        text-align: left;
-        justify-content: left;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .nav-list,
