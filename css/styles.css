@@ -734,12 +734,14 @@ body {
 
 @media (max-width: 320px) {
     .container {
+        max-width: 100%;
         display: flex;
-        flex-direction: column;
         text-align: left;
     }
 
     .section-two-list {
+        max-width: 100%;
+        display: flex;
         flex-direction: column;
         gap: 72px;
     }
@@ -755,19 +757,69 @@ body {
     .names,
     .section-three .item-header,
     .section-three .paragraph {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
-        text-align: left;
-        max-width: 100%;
     }
 
-    .sm-icons {
+    .item-header {
+        text-align: left;
+    }
+
+    .footer-container,
+    .sm-footer,
+    .subscribe-text {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 72px;
+    }
+
+    .subscribe-form,
+    .subscribe-label,
+    submit-button {
+        display: block;
+        padding-bottom: 16px;
+    }
+
+    .subscribe-label {
+        text-align: left;
         justify-content: left;
+    }
+
+    .nav-list,
+    .address-list,
+    .logo-mobile {
+        display: none;
     }
 }
 
-@media not screen and (min-width: 800px) {
+@media not screen and (min-width: 1000px) {
     .icons {
-        visibility: hidden;
+        display: none;
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 4px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+@media (min-width: 321px) {
+    .hamburger,
+    .container-mobile {
+        display: none;
     }
 }
