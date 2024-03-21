@@ -738,6 +738,11 @@ body {
         text-align: left;
     }
 
+    .title {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .benefits-item {
         width: 100%;
     }
@@ -834,22 +839,13 @@ body {
     }
 }
 
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hamburger-menu {
     padding: 20px;
     gap: 4px;
 }
 
-.line {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-}
-
-@media (min-width: 321px) {
-    .hamburger,
+@media (min-width: 768px) {
+    .hamburger-menu,
     .container-mobile {
         display: none;
     }
