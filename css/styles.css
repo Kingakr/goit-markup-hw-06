@@ -568,7 +568,7 @@ body {
     padding: 72px 24px 24px 24px;
 }
 
-.modal-button {
+.modal-button.is-open {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -981,16 +981,16 @@ body {
     }
 }
 
-@media (max-width: 1023px) {
-    .container-tablet {
-        max-width: 1023px;
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 768px;
         display: flex;
         text-align: left;
+        margin: 0;
     }
 
     .title {
         text-align: center;
-        margin: 0 auto;
     }
 
     .benefits-item {
@@ -998,8 +998,11 @@ body {
     }
 
     .address-list {
-        display: block;
-        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-end;
+        padding: 0;
     }
 
     .benefits-item {
@@ -1007,19 +1010,75 @@ body {
     }
 
     .section-two-list {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
     }
 
     .section-two-list .item-header {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 8px;
         font-weight: 700;
         font-size: 36px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .item-header {
+        padding-bottom: 8px;
         margin: 0 auto;
+    }
+
+    .benefits-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-list-card {
+        margin: 0;
+    }
+
+    .portfolio-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .footer-item {
+        margin: 0;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .logo-end {
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+    .subscribe-div {
+        padding: 0;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 24px;
+        row-gap: 72px;
+        margin: 0 108px;
     }
 }
