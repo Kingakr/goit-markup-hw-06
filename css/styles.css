@@ -256,13 +256,35 @@ body {
     padding: 188px 0;
 }
 
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) and (width >768px) {
     .section-one {
         background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)
             ),
-            url(../images/people-office@2.jpg);
+            url(../images/people-office.jpg), url(../images/people-office@2.jpg);
+    }
+}
+
+@media (min-resolution: 192dpi) and (width <768px) {
+    .section-one {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office-tablet.jpg),
+            url(../images/people-office-tablet@2.jpg);
+    }
+}
+
+@media (min-resolution: 192dpi) and (width <320px) {
+    .section-one {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office-mobile.jpg),
+            url(../images/people-office-mobile@2.jpg);
     }
 }
 
