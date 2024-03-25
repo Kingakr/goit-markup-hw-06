@@ -745,6 +745,7 @@ body {
 
 .checkbox-button {
     display: block;
+    margin: 0 100px;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
@@ -868,7 +869,7 @@ body {
     }
 
     .nav-list,
-    .address-list,
+    .address-link,
     .logo-mobile {
         display: none;
     }
@@ -927,12 +928,6 @@ body {
 
     .current::after {
         display: none;
-    }
-
-    .address-list-mobile {
-        display: block;
-        margin-left: 16px;
-        margin-top: 168px;
     }
 
     .address-link-mobile {
@@ -1007,6 +1002,13 @@ body {
         margin: 0;
     }
 
+    .section-two,
+    .section-three,
+    .section-four,
+    .footer {
+        padding: 96px 0;
+    }
+
     .title {
         text-align: center;
     }
@@ -1020,7 +1022,13 @@ body {
         flex-wrap: wrap;
         gap: 12px;
         justify-content: flex-end;
+        margin-top: 16px;
+        margin-bottom: 16px;
         padding: 0;
+    }
+
+    .current::after {
+        bottom: -13px;
     }
 
     .benefits-item {
