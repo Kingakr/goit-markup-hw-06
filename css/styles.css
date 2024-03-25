@@ -779,6 +779,13 @@ body {
         width: 100%;
     }
 
+    .section-two,
+    .section-three,
+    .section-four,
+    .footer {
+        padding: 96px 0;
+    }
+
     .section-two-list {
         max-width: 100%;
         display: flex;
